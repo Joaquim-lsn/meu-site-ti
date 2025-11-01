@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDS - Bem-vindo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#inicio">Lopes Digital Solutions</a>
+            </div>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Bem-vindo à Lopes Digital Solutions</h1>
+            <p>Soluções inovadoras para o seu negócio.</p>
+            <a href="#contato" class="cta-button">Fale Conosco</a>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>"Nossa jornada em TI está apenas começando, mas a qualidade de nossos serviços já fala por si. Na Lopes Digital Solutions, a satisfação do cliente é o nosso pilar: dedicamos a mesma atenção e expertise que garantiram a fidelidade de nosso primeiro cliente de contrato fixo para expandir nossa atuação e levar soluções de alto nível para o seu negócio."</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-container">
+                <div class="servico-item">
+                    <h3>Gestão e Manutenção Proativa de TI</h3>
+                    <p>Garantimos a alta disponibilidade e o desempenho contínuo da sua infraestrutura. Monitoramos seus servidores, sistemas e equipamentos 24/7 para identificar e solucionar falhas antes que elas impactem sua operação. Seu negócio funciona sem interrupções.</p>
+                </div>
+                <div class="servico-item">
+                    <h3>Atendimento Técnico Remoto Personalizado</h3>
+                    <p>Suporte técnico ágil e eficiente, a apenas um clique de distância. Nossos especialistas resolvem problemas de software, configurações e sistemas remotamente, garantindo que sua equipe retome a produtividade em minutos. Foco total na rapidez da solução.</p>
+                </div>
+                <div class="servico-item">
+                    <h3>Instalação e Organização de Cabos</h3>
+                    <p>Projetamos e implementamos redes de dados robustas e organizadas (cabeamento estruturado). Desde a instalação física dos cabos até a configuração lógica, garantimos uma base sólida para a performance e segurança da sua comunicação. Chega de lentidão e fios desorganizados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Estamos prontos para ajudar. Envie-nos uma mensagem!</p>
+            <form id="contact-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                
+                <button type="submit" class="cta-button">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lopes Digital Solutions. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=5561981658069" target="_blank" class="whatsapp-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-whatsapp"><path d="M21 12.038a9 9 0 0 0-18 0 9 9 0 0 0 18 0z"></path><path d="M16 12s-1-1-2-1c-1 0-2 1-2 2s1 2 2 2c1 0 2-1 2-1"></path><path d="M10 12s-1-1-2-1c-1 0-2 1-2 2s1 2 2 2c1 0 2-1 2-1"></path><path d="M8 8l-1 4 4 1 1-4z"></path></svg>
+        <span class="whatsapp-text">Fale Conosco!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

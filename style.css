@@ -1,0 +1,243 @@
+/* ---- Reset Básico e Estilos Globais ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* Isso ativa a rolagem suave quando você clica nos links do menu */
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ---- Cabeçalho e Navegação ---- */
+header {
+    background: #fff;
+    color: #333;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    position: fixed; /* Deixa o menu fixo no topo */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #50a3a2;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #50a3a2;
+}
+
+/* ---- Estilos das Seções Principais ---- */
+main {
+    padding-top: 80px; /* Compensa a altura do cabeçalho fixo */
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+/* ---- Seção Hero (Início) ---- */
+.hero {
+    background: #50a3a2; /* Cor principal */
+    color: #fff;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Botão de "Call to Action" (Chamada para Ação) */
+.cta-button {
+    display: inline-block;
+    background: #fff;
+    color: #50a3a2;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    border: 2px solid #fff;
+}
+
+.cta-button:hover {
+    background: #50a3a2;
+    color: #fff;
+}
+
+
+/* ---- Seção de Serviços ---- */
+.servicos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+    margin-top: 2rem;
+}
+
+.servico-item {
+    background: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex-basis: 300px; /* Largura base de cada item */
+    text-align: center;
+}
+
+.servico-item h3 {
+    color: #50a3a2;
+    margin-bottom: 1rem;
+}
+
+/* ---- Seção de Contato (Formulário) ---- */
+#contato {
+    background: #fff;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 2rem auto 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* ---- Rodapé ---- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: #fff;
+    margin-top: -1px; /* Remove a borda dupla */
+}
+
+/* ---- Estilo para o Botão Flutuante do WhatsApp ---- */
+
+.whatsapp-button {
+    /* Posição Fixa no canto inferior direito */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+    /* Estilização do botão */
+    background-color: #25D366; /* Cor verde do WhatsApp */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px; /* Deixa o botão arredondado */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    
+    /* Efeito de sombra e transição */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+
+    /* Alinhamento do ícone e texto */
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05); /* Pequeno efeito ao passar o mouse */
+    background-color: #128C7E; /* Tom de verde um pouco mais escuro */
+}
+
+.whatsapp-button svg {
+    /* Estilo do ícone */
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+/* Esconde o texto em telas muito pequenas (smartphones) para salvar espaço */
+@media (max-width: 600px) {
+    .whatsapp-button {
+        padding: 12px;
+        border-radius: 50%; /* Transforma o botão em círculo */
+        
+    }
+    .whatsapp-button svg {
+        margin-right: 0; /* Remove espaço extra */
+    }
+    .whatsapp-text {
+        display: none; /* Esconde o texto "Fale Conosco!" */
+    }
+}
